@@ -1,13 +1,13 @@
 <?php
 require 'int/automatedTestsGenerator.php';
-require 'generateAutomatedTests_Appium1_4_0_NativeMobile.conf.php';
+require 'generateAutomatedTests_Appium1_4_8_NativeMobile.conf.php';
 require_once 'Propel.php';
 		
 		
 
 /*Add your imports here*/
 
-class generateAutomatedTests_Appium1_4_0_NativeMobile implements automatedTestsGenerator {
+class generateAutomatedTests_Appium1_5_3_NativeMobile implements automatedTestsGenerator {
 
 
 	/* Si l'utilisateur Ã  cliquÃ© sur GÃ©nÃ©rer les tests manuels d'1
@@ -67,7 +67,7 @@ class generateAutomatedTests_Appium1_4_0_NativeMobile implements automatedTestsG
 	    self::writeLine($id_testcaseFile, '	public '.$testcase_class_name.'(String name) {');
 	    self::writeLine($id_testcaseFile, "		super(name);");
 	    self::writeLine($id_testcaseFile, "	}");
-	    self::writeLine($id_testcaseFile, "	//methode appelê¥ uniquement en mode lancement Junit, au lancement");
+	    self::writeLine($id_testcaseFile, "	//methode appelée uniquement en mode lancement Junit, au lancement");
 	    self::writeLine($id_testcaseFile, "	protected void setUp() throws Exception {");
 	    self::writeLine($id_testcaseFile, "		JunitLaunch=true;");
 	    self::writeLine($id_testcaseFile, "		super.setUp();");
@@ -646,6 +646,7 @@ class generateAutomatedTests_Appium1_4_0_NativeMobile implements automatedTestsG
 			
 			//find all different scenarios from export_automated_tests table
 			$tests = ExportAutomatedTestsQuery::create()->filterByTestcaseId ($testcase_id)->orderById()->groupByScenarioId()->find();
+		
 			$index_scenario=0;
 			foreach ($tests as $test) {
 				++$index_scenario;
@@ -1074,7 +1075,8 @@ class generateAutomatedTests_Appium1_4_0_NativeMobile implements automatedTestsG
 	 * @return mixed
 	 */
 	
-	function traiterAccents($libelle) {
+	
+function traiterAccents($libelle) {
 		$libelle = str_replace(' ', '_', $libelle);
 		$libelle = ereg_replace('’', '_', $libelle);
 		$libelle = ereg_replace('é', 'e', $libelle);
@@ -1101,6 +1103,7 @@ class generateAutomatedTests_Appium1_4_0_NativeMobile implements automatedTestsG
 		$libelle = str_replace('"', '_', $libelle);
 		return $libelle;
 	}
-	}
+}
+
 
 ?>

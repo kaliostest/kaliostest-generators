@@ -666,7 +666,7 @@ class generateAutomatedTests_Selenium2_53 implements automatedTestsGenerator {
 			self::writeLine($id_testcaseFile, "		boolean status = true;");
 			
 			//find all different scenarios from export_automated_tests table
-			$tests = ExportAutomatedTestsQuery::create()->orderById()->groupByScenarioId()->find();
+			$tests = ExportAutomatedTestsQuery::create()->filterByTestcaseId ($testcase_id)->orderById()->groupByScenarioId()->find();
 			$index_scenario=0;
 			foreach ($tests as $test) {
 				++$index_scenario;
