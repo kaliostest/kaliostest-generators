@@ -11,7 +11,6 @@ define ('IMPORT_MAINFILE',
 		import org.openqa.selenium.remote.DesiredCapabilities;
 		import junit.framework.*;');
 
-
 define ('IMPORT_SCENARIOSFILE', 'import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;');
 
 
