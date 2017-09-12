@@ -13,7 +13,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.io.IOException;
 import junit.framework.*;');
 
-
 define ('IMPORT_SCENARIOSFILE', 'import org.openqa.selenium.WebDriver;');
 
 

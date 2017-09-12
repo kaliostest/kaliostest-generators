@@ -2,8 +2,7 @@
 require 'int/automatedTestsGenerator.php';
 require 'generateAutomatedTests_Appium1_4_8_NativeMobile.conf.php';
 require_once 'Propel.php';
-		
-		
+			
 
 /*Add your imports here*/
 
