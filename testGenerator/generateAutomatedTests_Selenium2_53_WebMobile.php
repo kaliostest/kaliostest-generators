@@ -4,7 +4,6 @@ require 'generateAutomatedTests_Selenium2_53_WebMobile.conf.php';
 require_once 'Propel.php';
 		
 		
-
 /*Add your imports here*/
 
 class generateAutomatedTests_Selenium2_53_WebMobile implements automatedTestsGenerator {
