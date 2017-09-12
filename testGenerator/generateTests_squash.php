@@ -9,7 +9,6 @@ require_once './../inc/config.inc.php';
 require_once './../inc/FlxZipArchive.inc.php';
 
 
-
 /*Add your imports here*/
 	
 class generateTests_squash implements testGenerator {
