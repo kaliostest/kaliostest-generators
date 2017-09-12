@@ -118,7 +118,7 @@ class generateAutomatedTests_Appium1_5_3_NativeMobile implements automatedTestsG
 			
 		}
          self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, deviceOsVersion);');
-		 self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.LAUNCH_TIMEOUT, Config.window_attach_timeout);');
+		 self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.LAUNCH_TIMEOUT, Integer.parseInt (Config.window_attach_timeout));');
   
 		//driver IOS or Android
 	   switch ($osvalue) {
@@ -357,7 +357,7 @@ class generateAutomatedTests_Appium1_5_3_NativeMobile implements automatedTestsG
 			
 		}
          self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, deviceOsVersion);');
-		 self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.LAUNCH_TIMEOUT, Config.window_attach_timeout);');
+			 self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.LAUNCH_TIMEOUT, Integer.parseInt (Config.window_attach_timeout));');
   
 		//driver IOS or Android
 	   switch ($osvalue) {
@@ -623,7 +623,7 @@ class generateAutomatedTests_Appium1_5_3_NativeMobile implements automatedTestsG
 			
 		}
          self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, deviceOsVersion);');
-		 self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.LAUNCH_TIMEOUT, Config.window_attach_timeout);');
+		 self::writeLine($id_testcaseFile, '		capabilities.setCapability(MobileCapabilityType.LAUNCH_TIMEOUT, Integer.parseInt (Config.window_attach_timeout));');
   
 		//driver IOS or Android
 	   switch ($osvalue) {
