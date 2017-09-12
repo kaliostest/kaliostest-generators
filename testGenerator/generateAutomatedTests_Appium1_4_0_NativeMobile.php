@@ -1,3 +1,4 @@
+
 <?php
 require 'int/automatedTestsGenerator.php';
 require 'generateAutomatedTests_Appium1_4_0_NativeMobile.conf.php';
