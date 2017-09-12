@@ -8,7 +8,6 @@ include 'PHPExcel/Writer/Excel2007.php';
 require_once './../inc/config.inc.php';
 
 
-
 /*Add your imports here*/
 	
 class generateTests_QC implements testGenerator {
