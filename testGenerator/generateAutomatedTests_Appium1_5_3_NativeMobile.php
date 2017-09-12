@@ -4,7 +4,6 @@ require 'generateAutomatedTests_Appium1_4_8_NativeMobile.conf.php';
 require_once 'Propel.php';
 		
 		
-
 /*Add your imports here*/
 
 class generateAutomatedTests_Appium1_5_3_NativeMobile implements automatedTestsGenerator {
