@@ -5,6 +5,7 @@
  * @author Simon PICCIOTTO (KALIOS)
  */
 
+ 
 interface automatedTestsGenerator {
 	
 	
